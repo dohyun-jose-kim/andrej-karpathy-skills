@@ -52,7 +52,7 @@ curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/
 
 ---
 
-# 이하 원본 영문 가이드라인 
+# 이하 원본 영문 가이드라인, "Karpathy-Inspired Claude Code Guidelines"
 > Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
 >
 > Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
