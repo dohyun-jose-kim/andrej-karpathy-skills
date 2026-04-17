@@ -1,5 +1,58 @@
+
 # Karpathy-Inspired Claude Code Guidelines
 
+## 핵심 요약
+
+### 사용 목적
+
+LLM(Claude Code 등)이 코딩할 때 흔히 저지르는 실수를 줄이기 위한 행동 가이드라인. `CLAUDE.md` 또는 플러그인으로 적용하여 불필요한 코드 변경, 과도한 추상화, 잘못된 가정을 방지한다.
+
+### 핵심 내용
+
+Andrej Karpathy의 LLM 코딩 문제점 관찰에서 파생된 **4가지 원칙**:
+
+1. **Think Before Coding** — 가정하지 말고, 모호하면 질문하라
+2. **Simplicity First** — 요청된 것만 최소한으로 구현하라
+3. **Surgical Changes** — 요청과 관련된 코드만 수정하라
+4. **Goal-Driven Execution** — 성공 기준을 정의하고 검증 루프를 돌려라
+
+
+## 출처
+
+- **원본 아이디어**: [Andrej Karpathy의 X 포스트](https://x.com/karpathy/status/2015883857489522876) — LLM 코딩 문제점 관찰
+- **프로젝트 제작자**: [forrestchang](https://github.com/forrestchang) (X: [@jiayuan_jy](https://x.com/jiayuan_jy))
+- **원본 레포**: [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)
+
+## 사용 방법
+
+### 방법 A: Claude Code 플러그인 설치 
+**모든 프로젝트에서 자동 적용됨.**
+Claude Code 안에서 실행:
+```
+/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin install andrej-karpathy-skills@karpathy-skills
+```
+
+
+### 방법 B: CLAUDE.md로 새 프로젝트에 추가
+**프로젝트 루트에 `CLAUDE.md` 파일이 생성되어 해당 프로젝트에서만 적용.**
+
+```bash
+curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+```
+****
+
+### 방법 C: 기존 CLAUDE.md에 병합
+**이미 `CLAUDE.md`가 있는 프로젝트에 가이드라인을 뒤에 붙여서 추가.**
+
+```bash
+echo "" >> CLAUDE.md
+curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md
+```
+
+---
+
+# 이하 원본 영문 가이드라인 
 > Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
 >
 > Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
